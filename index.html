@@ -6,11 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .vb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-    <div>嘻嘻</div>
+    <div class="vb">嘻嘻</div>
     <!-- <div>嘿嘿嘿</div> -->
+    <script>
+        console.log(/^哈$/.test('哈'));
+        console.log(/^哈{2}$/.test('哈哈'));
+        console.log(/^[1-9][0-9]{4,}$/.test('11061472426'));
+        console.log(/^[0-9]{3}$/.test('333'));
+        console.log(/^[a-zA-Z0-9]$/.test('bb'));
+    </script>
 </body>
 
 </html>
